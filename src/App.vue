@@ -3,11 +3,13 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import VodPlayer from './components/vodplayer.vue'
 import ChatRoom from './components/chatroom.vue'
+
 </script>
 
 <template>
-  <VodPlayer />
-  <!-- <ChatRoom /> -->
+  <!-- <VodPlayer /> -->
+  <!-- <plv-portrait-view /> -->
+  <ChatRoom />
 </template>
 
 <style>

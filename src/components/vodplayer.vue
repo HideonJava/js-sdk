@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 import { loadScript } from "../assets/utils/loadJS";
 </script>
 
@@ -11,7 +10,7 @@ import { loadScript } from "../assets/utils/loadJS";
 export default {
   data() {
     return {
-      vid: "2aad30cbba8ac6485498205dfb5ea359_2",
+      vid: "fd2a1ad40a67fc11bb812b0bb398f85c_f",
     };
   },
   created() {},
@@ -22,7 +21,7 @@ export default {
   methods: {
     loadChatScript(callback) {
       loadScript(
-        "https://player.polyv.net/resp/vod-player/latest/player.js",
+        "https://player.polyv.net/script/player.js",
         callback,
         "polyvPlayer"
       );
@@ -36,8 +35,10 @@ export default {
         width: "100%",
         height: 500,
         vid: this.vid,
-        ban_seek: "on",
-        ban_seek_by_limit_time: 'on'
+        // ban_seek: "on",
+        // ban_seek_by_limit_time: 'on',
+        showLine: 'true',
+        df: 3,
       });
       this.addEvents();
     },
